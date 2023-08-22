@@ -83,19 +83,19 @@ dependencies {
 
 }
 
-//sonarqube {
-//    properties {
-//        property("sonar.host.url", "http://localhost:9000") // Change to your SonarQube server URL
-//        property("sonar.login", "04fae4924d762058decb88a09bc9064fd80f8e5b")     // Replace with your authentication token
-//        property ("sonar.projectKey", "23753-first-android-app")
-//        property ("sonar.projectName", "23753-first-android-app")
-//        property ("sonar.tests", "src/test/java")
-//        property ("sonar.test.inclusions", "**/*Test*/**"
-//        )
-//        property ("sonar.sourceEncoding", "UTF-8")
-//        property ("sonar.sources", "src/main/java")
-//    }
-//}
+sonarqube {
+    properties {
+        property("sonar.host.url", "http://localhost:9000") // Change to your SonarQube server URL
+        property("sonar.login", "04fae4924d762058decb88a09bc9064fd80f8e5b")     // Replace with your authentication token
+        property ("sonar.projectKey", "23753-first-android-app")
+        property ("sonar.projectName", "23753-first-android-app")
+        property ("sonar.tests", "src/test/java")
+        property ("sonar.test.inclusions", "**/*Test*/**"
+        )
+        property ("sonar.sourceEncoding", "UTF-8")
+        property ("sonar.sources", "src/main/java")
+    }
+}
 
 
 
