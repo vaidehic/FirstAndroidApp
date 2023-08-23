@@ -5,9 +5,12 @@ plugins {
     id("org.jetbrains.kotlin.android")
 
     id ("org.sonarqube") version "3.3"
-
+    id ("jacoco")
 
 }
+
+
+
 
 
 
@@ -16,6 +19,8 @@ android {
 
 
     compileSdk = 33
+
+
 
     defaultConfig {
         applicationId = "com.example.firstandroidapp"
@@ -31,7 +36,9 @@ android {
     }
 
     buildTypes {
+
         debug {
+            // Enable JaCoCo coverage for the debug build
             isTestCoverageEnabled = true
         }
         release {
@@ -96,9 +103,6 @@ sonarqube {
         property ("sonar.sources", "src/main/java")
     }
 }
-
-
-
 
 
 
