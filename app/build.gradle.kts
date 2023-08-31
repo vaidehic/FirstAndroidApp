@@ -9,18 +9,11 @@ plugins {
 
 }
 
-
-
-
-
-
 android {
     namespace = "com.example.firstandroidapp"
 
 
     compileSdk = 33
-
-
 
     defaultConfig {
         applicationId = "com.example.firstandroidapp"
