@@ -35,4 +35,19 @@ platform :android do
     gradle(task: "clean assembleRelease")
     upload_to_play_store
   end
+
+lane :deploy_to_beta do
+  gradle(task: "assembleDebug") # Replace with your build task
+  supply(track: 'beta') # Upload APK to Google Play Beta track
+end
+
+
+
+
+
+
+
+
+
+
 end
